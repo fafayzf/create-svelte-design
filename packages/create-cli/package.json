@@ -1,21 +1,30 @@
 {
-  "name": "svelte-design-create-cli",
+  "name": "create-svelte-design-cli",
   "version": "1.0.0",
   "description": "create template cli",
   "main": "index.js",
   "scripts": {
-    "build": "libuild",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "unbuild --stub",
+    "build": "unbuild",
+    "typecheck": "tsc --noEmit"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vitejs/vite.git",
+    "directory": "packages/create-vite"
+  },
+  "bugs": {
+    "url": "https://github.com/vitejs/vite/issues"
+  },
+  "homepage": "https://github.com/vitejs/vite/tree/main/packages/create-vite#readme",
   "keywords": [],
   "author": "",
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^20.7.0",
+    "cac": "^6.7.14",
     "esno": "^0.17.0",
+    "minimist": "^1.2.8",
     "typescript": "^5.2.2"
-  },
-  "dependencies": {
-    "cac": "^6.7.14"
   }
 }

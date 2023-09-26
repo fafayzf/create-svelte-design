@@ -1,16 +1,12 @@
 {
-  "name": "create-svelte-design",
+  "name": "create-svelte-design-admin",
   "version": "1.0.0",
-  "private": true,
-  "description": "create sevelte design template",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    
-  }
+  "license": "ISC"
 }

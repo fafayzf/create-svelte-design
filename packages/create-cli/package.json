@@ -1,0 +1,21 @@
+{
+  "name": "svelte-design-create-cli",
+  "version": "1.0.0",
+  "description": "create template cli",
+  "main": "index.js",
+  "scripts": {
+    "build": "libuild",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.7.0",
+    "esno": "^0.17.0",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "cac": "^6.7.14"
+  }
+}

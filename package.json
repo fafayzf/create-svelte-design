@@ -15,7 +15,7 @@
     "svelte-cli",
     "create-svelte"
   ],
-  "author": "",
+  "author": "fafayzf <fafayzf@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "@yzfu/bumpx": "^1.2.0",

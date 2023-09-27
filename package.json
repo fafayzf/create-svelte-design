@@ -1,16 +1,17 @@
 {
   "name": "create-svelte-design",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "description": "create sevelte design template",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "pub": "bumpx -s"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    
+    "@yzfu/bumpx": "^1.2.0",
+    "unbuild": "^2.0.0"
   }
 }

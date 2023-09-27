@@ -1,13 +1,14 @@
 {
   "name": "create-svelte-design-template",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "npx create svelte-design-template",
   "main": "index.js",
   "scripts": {
+    "build": "unbuild",
     "init": "node index.js"
   },
   "bin": {
-    "create-svelte-design-template": "./index.js"
+    "create-svelte-design-template": "./dist/index.mjs"
   },
   "repository": {
     "type": "git",

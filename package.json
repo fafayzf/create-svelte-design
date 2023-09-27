@@ -1,11 +1,10 @@
 {
   "name": "create-svelte-design",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "private": true,
   "description": "create sevelte design template",
   "main": "index.js",
   "scripts": {
-    "build": "pnpm run -C ./packages/create-cli build",
     "bumpx": "bumpx -s",
     "release": "pnpm bumpx && pnpm publish -r --no-git-checks"
   },

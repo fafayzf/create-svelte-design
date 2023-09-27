@@ -1,12 +1,26 @@
 {
   "name": "create-svelte-design-template",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.2",
+  "description": "npx create svelte-design-template",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "init": "node index.js"
   },
+  "bin": {
+    "create-svelte-design-template": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fafayzf/svelte-design-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fafayzf/svelte-design-template/issues"
+  },
+  "homepage": "https://github.com/fafayzf/svelte-design-template/blob/main/README.md",
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "fafayzf <fafayzf@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "create-svelte-design-cli": "workspace:*"
+  }
 }

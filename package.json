@@ -1,15 +1,22 @@
 {
   "name": "create-svelte-design",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": true,
   "description": "create sevelte design template",
   "main": "index.js",
   "scripts": {
-    "pub": "bumpx -s"
+    "build": "pnpm run -C ./packages/create-cli build",
+    "bumpx": "bumpx -s",
+    "release": "pnpm bumpx && pnpm publish -r --git-no-checks"
   },
-  "keywords": [],
+  "keywords": [
+    "svelte",
+    "svelte-design",
+    "svelte-cli",
+    "create-svelte"
+  ],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@yzfu/bumpx": "^1.2.0",
     "unbuild": "^2.0.0"

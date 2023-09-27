@@ -1,10 +1,8 @@
 import { defineBuildConfig } from 'unbuild'
 
-export const buildConfig = defineBuildConfig({
-  entries: ['src/index'],
+export default defineBuildConfig({
   clean: true,
   rollup: {
-    inlineDependencies: true,
     esbuild: {
       target: 'node18',
       minify: true,

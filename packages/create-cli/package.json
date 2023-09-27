@@ -1,6 +1,6 @@
 {
   "name": "create-svelte-design-cli",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "create template cli",
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",

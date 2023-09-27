@@ -1,6 +1,6 @@
 {
   "name": "create-svelte-design-admin",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "npx create svelte-design-admin",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,8 @@
     "init": "node index.js"
   },
   "bin": {
-    "create-svelte-design-admin": "./dist/index.mjs"
+    "create-svelte-design-admin": "index.js",
+    "sda": "index.js"
   },
   "repository": {
     "type": "git",

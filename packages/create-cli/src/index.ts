@@ -28,7 +28,6 @@ export async function create(target: DefaultTarget = { dir: '', repoPath: '' }) 
   }>(process.argv.slice(2), { string: ['_'] })
 
   const argTargetDir = formatTargetDir(argv._[0])
-
   let targetDir = (argTargetDir || target.dir || defaultTarget.dir) as string
   const getProjectName = () =>
     targetDir === '.' ? path.basename(path.resolve()) : targetDir
@@ -40,7 +39,7 @@ export async function create(target: DefaultTarget = { dir: '', repoPath: '' }) 
   try {
     result = await prompts([
       {
-        type: argTargetDir ? null : 'text',
+        type: 'text',
         name: 'projectName',
         message: reset('Project name:'),
         initial: targetDir,
@@ -84,7 +83,7 @@ export async function create(target: DefaultTarget = { dir: '', repoPath: '' }) 
     ])
 
     const { projectName, overwrite, packageName, repoPath } = result
-
+    
     const root = path.join(cwd, projectName)
     
     if (overwrite) {

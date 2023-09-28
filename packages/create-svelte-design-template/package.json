@@ -1,6 +1,6 @@
 {
   "name": "create-svelte-design-template",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "npx create svelte-design-template",
   "main": "index.js",
   "scripts": {

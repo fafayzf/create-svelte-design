@@ -1,6 +1,6 @@
 {
   "name": "create-svelte-design",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "private": true,
   "description": "create sevelte design template",
   "main": "index.js",

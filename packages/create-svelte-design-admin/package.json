@@ -1,6 +1,6 @@
 {
   "name": "create-svelte-design-admin",
-  "version": "1.0.8",
+  "version": "1.1.0",
   "description": "npx create svelte-design-admin",
   "main": "index.js",
   "scripts": {

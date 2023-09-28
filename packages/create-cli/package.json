@@ -2,17 +2,9 @@
   "name": "create-svelte-design-cli",
   "version": "1.0.5",
   "description": "create template cli",
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.mjs",
-  "exports": {
-    ".": {
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.cjs"
-    }
-  },
+  "main": "./dist/index.js",
   "scripts": {
-    "dev": "unbuild --stub",
-    "build": "unbuild",
+    "build": "esbuild ./src/index.ts --bundle --minify --platform=node --outfile=./dist/index.js",
     "typecheck": "tsc --noEmit"
   },
   "repository": {
@@ -33,6 +25,7 @@
   "author": "fafayzf <fafayzf@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "@types/download": "^8.0.2",
     "@types/minimist": "^1.2.2",
     "@types/node": "^20.7.0",
     "@types/progress": "^2.0.5",
@@ -46,6 +39,7 @@
     "ora": "^7.0.1",
     "progress": "^2.0.3",
     "prompts": "^2.4.2",
+    "rimraf": "^5.0.5",
     "simple-git": "^3.20.0",
     "string_decoder": "^1.3.0",
     "typescript": "^5.2.2"

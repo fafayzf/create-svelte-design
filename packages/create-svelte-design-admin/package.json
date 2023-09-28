@@ -3,9 +3,8 @@
   "version": "1.0.6",
   "description": "npx create svelte-design-admin",
   "main": "index.js",
-  "type": "module",
   "scripts": {
-    "build": "unbuild",
+    "build": "esbuild ./src/index.ts --bundle --minify --platform=node --outfile=./dist/index.js",
     "init": "node index.js"
   },
   "bin": {

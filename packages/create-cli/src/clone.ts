@@ -1,5 +1,5 @@
-import { simpleGit } from 'simple-git'
-import { green } from 'kolorist'
+import { simpleGit, SimpleGitProgressEvent  } from 'simple-git'
+import { green, yellow } from 'kolorist'
 import fs from 'node:fs'
 import path from 'node:path'
 import { rimraf } from 'rimraf'
@@ -16,8 +16,9 @@ export function cloneTemplate(
   packageName: string
 ) {
   // spinner.start()
-  simpleGit()
-    .clone(repoPath, localPath)
+  console.log(yellow('download loading...\n'))
+  simpleGit({ progress })
+    .clone(repoPath, localPath, ['--progress'])
     .then(() => {
       // Manually delete the .git directory, no good package found yet
       const gitDir = path.join(localPath, '.git')
@@ -38,4 +39,12 @@ export function cloneTemplate(
     .catch(error => {
       console.error(error)
     })
+}
+
+function progress({
+  method, 
+  stage, 
+  progress
+}: SimpleGitProgressEvent) {
+  console.log(`git.${method} ${green(stage)} stage ${progress === 100 ? green(progress + '%') : yellow(progress + '%')} complete\n`);
 }

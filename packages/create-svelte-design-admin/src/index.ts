@@ -2,6 +2,6 @@
 import { create } from 'create-svelte-design-cli'
 
 create({
-  repoPath: 'https://github.com/fafayzf/svelte-design-template',
+  repoPath: 'https://github.com/fafayzf/svelte-design-admin',
   dir: 'svelte-design-admin'
 })

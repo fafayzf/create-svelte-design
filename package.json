@@ -1,13 +1,13 @@
 {
   "name": "create-svelte-design",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "private": true,
   "description": "create sevelte design template",
   "main": "index.js",
   "scripts": {
     "build": "pnpm -r --filter=./packages/** run build",
     "bumpx": "bumpx -s",
-    "release": "pnpm bumpx && pnpm publish -r --no-git-checks"
+    "release": "pnpm build && pnpm bumpx && pnpm publish -r --no-git-checks"
   },
   "keywords": [
     "svelte",

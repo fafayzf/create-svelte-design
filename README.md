@@ -1,7 +1,7 @@
 ## create-svelte-design
 
-- quick start create `svelte-design-template`, script `npx create svelte-design-template`
-- quick start create `svelte-design-admin`, script `npx create svelte-design-admin`
+- quick start create [`svelte-design-template`](https://github.com/fafayzf/create-svelte-design/blob/main/packages/create-svelte-design-template/README.md), script `npx create svelte-design-template`
+- quick start create [`svelte-design-admin`](https://github.com/fafayzf/create-svelte-design/blob/main/packages/create-svelte-design-admin/README.md), script `npx create svelte-design-admin`
 - include `create-svelte-design-cli`
 
 ### Method

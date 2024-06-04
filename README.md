@@ -10,7 +10,7 @@ Manually git clone the remote template
 import { create } from 'create-svelte-design-cli'
 
 create({
-  // Remote git address
+  // Remote git address，you can fill in any remote address, not necessarily the current template address
   repoPath: 'https://github.com/fafayzf/create-svelte-design.git',
   // local directory name
   dir: 'svelte-project'

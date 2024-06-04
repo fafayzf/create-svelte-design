@@ -1,6 +1,6 @@
 ## create-svelte-design-template
 
-Backend template based on [**svelte-design-ui**](https://github.com/fafayzf/svelte-design-ui)
+Backend template based on [**melt-ui**](https://github.com/melt-ui/melt-ui)
 ### Download
 ```sh
 npx create svelte-design-template

@@ -7,6 +7,7 @@
 ### Method
 Manually git clone the remote template
 ```ts
+// index.ts/index.js
 import { create } from 'create-svelte-design-cli'
 
 create({
@@ -17,3 +18,4 @@ create({
 })
 
 ```
+> Use `esno` to execute the `index.ts` script or use `node` to execute the `index.js` script`
